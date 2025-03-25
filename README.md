@@ -2,7 +2,8 @@
 # MDSS_P2
 
 ## Diagrama de Clases (Global)
-![image](https://github.com/user-attachments/assets/e52a5960-3ac5-4f1a-871d-63b0385ef6cc)
+![image](https://github.com/user-attachments/assets/e668bab6-b710-47ff-8854-5ba6dfe9a407)
+
 
 ## Patrones de Diseño Aplicados
 
