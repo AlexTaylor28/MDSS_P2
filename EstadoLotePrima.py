@@ -1,6 +1,5 @@
 ﻿from __future__ import annotations
 from typing import TYPE_CHECKING
-from abc import ABC, abstractmethod
 from datetime import date, datetime
 
 if TYPE_CHECKING:
@@ -10,7 +9,7 @@ if TYPE_CHECKING:
     from Analizador import Analizador
 
 # -------------------------------------------------------------------------------- #
-class EstadoLotePrima(ABC):
+class EstadoLotePrima:
 
     def __init__(self, lote: LotePrima):
         self.lote = lote
