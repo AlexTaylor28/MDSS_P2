@@ -1,10 +1,8 @@
+
 # MDSS_P2
 
-Diagrama de Clases (Global):
+## Diagrama de Clases (Global)
 ![image](https://github.com/user-attachments/assets/e8d884ce-9561-4764-803a-ca002433ed28)
-
-Diagrama de Secuencia (Estado Lote Materia Prima)
-![image](https://github.com/user-attachments/assets/948677b6-ad09-4f00-96b9-bca58be48834)
 
 ## Patrones de Diseño Aplicados
 
@@ -25,6 +23,11 @@ El patrón **Visitor** se ha aplicado en la relación entre las clases `Producto
 
 Se ha aplicado el patrón **Strategy** para evaluar la calidad de productos como Aceite de Oliva y Olivas de Mesa. Cada tipo de producto tiene su propia estrategia de evaluación de calidad, lo que permite modificar el comportamiento de la evaluación sin alterar las clases de los productos.
 
-
 Además, se utiliza el patrón **Template Method** en el método `calcular_calidad` de la clase abstracta `EstrategiaCalidad`. Este método define el esqueleto del algoritmo para calcular la calidad del producto, pero delega los detalles específicos de cómo calcular cada factor a los métodos abstractos definidos en las subclases.
 
+### 3. Patrón **Strategy**  -  Exportador
+Se ha aplicado el patrón **Strategy** para el `Exportador`, con la diferencia de que el `LoteProduccion` no mantiene una referencia a un exportador específico. En lugar de eso, el exportador se pasa como parámetro en la llamada al método exportar, permitiendo un control más directo y rápido sobre el tipo de exportación, manteniendo `ExportadorPDF` como valor predeterminado: `exportar(exportador = ExportadorPDF())`
+
+
+## Diagrama de Secuencia (Estado Lote Materia Prima)
+![image](https://github.com/user-attachments/assets/948677b6-ad09-4f00-96b9-bca58be48834)
