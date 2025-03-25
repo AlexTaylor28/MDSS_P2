@@ -1,6 +1,5 @@
 ﻿from __future__ import annotations
 from typing import TYPE_CHECKING
-from abc import ABC, abstractmethod
 from datetime import datetime
 
 if TYPE_CHECKING:
@@ -9,7 +8,7 @@ if TYPE_CHECKING:
     from ProductoFinal import ProductoFinal
 
 # -------------------------------------------------------------------------------- #
-class EstadoLoteProduccion(ABC):
+class EstadoLoteProduccion():
 
     def __init__(self, lote_produccion: LoteProduccion):
         self.lote_produccion = lote_produccion
