@@ -18,3 +18,4 @@ Se ha aplicado el patrón Visitor en la relación entre las clases Producto y An
 
 Indicador de Calidad de Producto Final:
 Se ha aplicado el patrón Stratergy para evaluar la calidad de productos como Aceite de Oliva y Olivas de Mesa. Cada tipo de producto tiene su propia estrategia de evaluación de calidad, lo que permite modificar el comportamiento de la evaluación sin alterar las clases de los productos.
+Además, se utiliza el patrón Template Method en el método calcular calidad de la clase abstracta EstrategiaCalidad. Este método define el esqueleto del algoritmo para calcular la calidad del producto, pero delega los detalles específicos de cómo calcular cada factor a los métodos abstractos definidos en las subclases.
